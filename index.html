@@ -42,5 +42,21 @@
       allow="fullscreen; camera; microphone; display-capture; geolocation;">
     </iframe>
   </div>
+  <script>
+  window.addEventListener('touchstart', function() {
+    var iframe = document.querySelector('iframe');
+    if (iframe) {
+      iframe.focus();
+    }
+  }, false);
+
+  // Tambahan: Kirim pesan "Klik" ke dalam iframe
+  window.addEventListener('click', function() {
+    var iframe = document.querySelector('iframe');
+    if (iframe) {
+      iframe.focus();
+    }
+  });
+</script>
 </body>
 </html>
